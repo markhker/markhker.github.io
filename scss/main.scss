@@ -1,0 +1,143 @@
+/* main.scss */
+/* ==========================================================================
+   Mark Hkr styles v1.2.0
+    Bootstrap v3.3.5 Custom 20 cols
+    jQuery v1.11.3
+    FontAwesome v4.4.0
+
+    @markhker
+   ========================================================================== */
+
+/* import fonts & vars */
+
+@import 'fonts';
+@import 'vars';
+@import 'base';
+@import 'responsive';
+
+.logo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main-header {
+    padding-bottom: 2%;
+}
+
+h1 {
+    @extend %bq;
+    font-style: italic;
+}
+
+h2 {
+    @extend %bq;
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 7%;
+}
+
+.main-p {
+    @extend %p;
+    font-family: $font-main;
+    font-weight: 300;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.gold-p {
+    @extend %p;
+    color: $gold;
+    font-style: italic;
+    margin-top: 8%;
+}
+
+.section-one {
+    background: url('../img/principal.jpg') no-repeat center;
+    background-size: cover;
+    height: 238px;
+    
+    p {
+        color: $w;
+        @extend %p;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    @include respond-to(xsmall, up) {
+        height: 500px;
+    }
+    
+    @include respond-to(medium, up) {
+        height: 519px;
+    }
+}
+
+.section-two {
+    .today-img {
+        margin-bottom: -30%;
+    }
+}
+
+.section-three {
+    background-color: $back;
+    padding-bottom: 5%;
+    
+    .icon {
+        header {
+            height: 200px;
+            width: 200px;
+            border: 1px solid $gold-sutil;
+            border-radius: 50%;
+            margin: 0 auto;
+            
+            img {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        
+        footer {
+            font-style: italic;
+            text-align: center;
+            @extend %p;
+            color: $gold;
+            margin-top: 2%;
+            margin-bottom: 10%;
+        }
+    }
+}
+
+.main-footer {
+    background-color: $black;
+    margin-left: 0;
+    
+    article {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    
+    p {
+        @extend %bq;
+        color: $gold-light;
+        font-style: italic;
+        line-height: 155%;
+    }
+    
+    .cite {
+        @extend %p;
+        color: $w;
+        font-style: italic;
+    }
+    
+    hr {
+        border-bottom: 2px solid $gold-light;
+        width: 4rem;
+    }
+}
+
+.hide-me {
+    opacity: 0;
+}

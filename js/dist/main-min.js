@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).scroll(function(){$(".hide-me").each(function(o){var i=$(this).offset().top,n=$(window).scrollTop()+$(window).height();i+=200,n>i&&$(this).animate({opacity:"1"},500)})})});
