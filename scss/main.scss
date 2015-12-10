@@ -65,7 +65,7 @@ h2 {
         transform: translateY(-50%);
     }
     
-    @include respond-to(xsmall, up) {
+    @include respond-to(small, up) {
         height: 500px;
     }
     
